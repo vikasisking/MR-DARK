@@ -75,11 +75,10 @@ def get_join_channel_message():
             url = f"https://t.me/{channel[1:]}"
         else:
             url = f"https://t.me/c/{channel.replace('-100', '')}"  # For private channels with chat IDs
-        keyboard.append([InlineKeyboardButton(f"Join {channel}", url=url)])
+        keyboard.append([InlineKeyboardButton(f"🚀 Join 🚀", url=url)])
        # keyboard.append([InlineKeyboardButton(f"Join {channel2}", url=url)])
     keyboard.append([InlineKeyboardButton("✅ Check Membership", callback_data="check_membership")])
     return (
-        "Join Main Channel https://t.me/+2P-OUmWo1hc0NmNh\n"
         "⚠️ <b>Please join all required channels to use this bot!</b>\n\n"
         "Click the buttons below to join the channels, then press 'Check Membership'.\n"
         "━━━━━━━━━━━━━━━━━━━━━━\n"
